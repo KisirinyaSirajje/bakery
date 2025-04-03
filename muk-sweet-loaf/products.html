@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Muk Sweet Loaf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+          <nav class="navbar">
+            <a href="index.html" class="logo">Muk Sweet Loaf</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </div>
+    </header>
+      
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Our Products</h1>
+            <p>Discover our range of freshly baked goods</p>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All Products</button>
+                <button class="tab-btn" data-category="bread">Breads</button>
+                <button class="tab-btn" data-category="pastry">Pastries</button>
+                <button class="tab-btn" data-category="cake">Cakes</button>
+                <button class="tab-btn" data-category="cookie">Cookies</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Breads -->
+                <div class="product-card" data-category="bread">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sourdough Bread">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sourdough Bread</h3>
+                        <p>Our signature sourdough with a perfect crust and soft interior.</p>
+                        <span class="price">UGX 8,000</span>
+                        <button class="btn-small view-product" data-id="1">Buy</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bread">
+                    <div class="product-image">
+                        <img src="./images/loaf.jpg" alt="Multigrain Loaf">
+                    </div>
+                    <div class="product-info">
+                        <h3>Multigrain Loaf</h3>
+                        <p>Nutritious bread packed with various grains and seeds.</p>
+                        <span class="price">UGX 7,500</span>
+                        <button class="btn-small view-product" data-id="2">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bread">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1620921568790-c1cf8984624c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Baguette">
+                    </div>
+                    <div class="product-info">
+                        <h3>French Baguette</h3>
+                        <p>Traditional French bread with a crispy crust and light interior.</p>
+                        <span class="price">UGX 6,000</span>
+                        <button class="btn-small view-product" data-id="3">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Pastries -->
+                <div class="product-card" data-category="pastry">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chocolate Croissants">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Croissants</h3>
+                        <p>Buttery, flaky croissants filled with rich chocolate.</p>
+                        <span class="price">UGX 5,500</span>
+                        <button class="btn-small view-product" data-id="4">Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pastry">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Cinnamon Rolls">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cinnamon Rolls</h3>
+                        <p>Soft, sweet rolls with cinnamon and cream cheese frosting.</p>
+                        <span class="price">UGX 6,000</span>
+                        <button class="btn-small view-product" data-id="5">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pastry">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1623334044303-241021148842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Danish Pastry">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fruit Danish</h3>
+                        <p>Flaky pastry topped with seasonal fruits and vanilla custard.</p>
+                        <span class="price">UGX 5,000</span>
+                        <button class="btn-small view-product" data-id="6">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Cakes -->
+                <div class="product-card" data-category="cake">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1689&q=80" alt="Birthday Cake">
+                    </div>
+                    <div class="product-info">
+                        <h3>Birthday Cake</h3>
+                        <p>Custom-made celebration cakes for your special occasions.</p>
+                        <span class="price">From UGX 45,000</span>
+                        <button class="btn-small view-product" data-id="7">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cake">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Chocolate Cake">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Cake</h3>
+                        <p>Rich, moist chocolate cake with ganache frosting.</p>
+                        <span class="price">UGX 35,000</span>
+                        <button class="btn-small view-product" data-id="8">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cake">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1436&q=80" alt="Cheesecake">
+                    </div>
+                    <div class="product-info">
+                        <h3>New York Cheesecake</h3>
+                        <p>Creamy cheesecake with a graham cracker crust.</p>
+                        <span class="price">UGX 40,000</span>
+                        <button class="btn-small view-product" data-id="9">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Cookies -->
+                <div class="product-card" data-category="cookie">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chocolate Chip Cookies">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Chip Cookies</h3>
+                        <p>Classic cookies with chunks of chocolate and a soft center.</p>
+                        <span class="price">UGX 2,000 each</span>
+                        <button class="btn-small view-product" data-id="10">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cookie">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Macarons">
+                    </div>
+                    <div class="product-info">
+                        <h3>Assorted Macarons</h3>
+                        <p>Delicate French cookies in various flavors.</p>
+                        <span class="price">UGX 3,500 each</span>
+                        <button class="btn-small view-product" data-id="11">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cookie">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584365685547-9a5fb6f3a70c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Shortbread Cookies">
+                    </div>
+                    <div class="product-info">
+                        <h3>Shortbread Cookies</h3>
+                        <p>Buttery, crumbly traditional shortbread.</p>
+                        <span class="price">UGX 2,500 each</span>
+                        <button class="btn-small view-product" data-id="12">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="Product Image">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-price">
+                        <span id="modalPrice"></span>
+                    </div>
+                    <div class="modal-ingredients">
+                        <h4>Ingredients:</h4>
+                        <p id="modalIngredients"></p>
+                    </div>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" max="20" id="quantity">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Muk Sweet Loaf</h3>
+                <p>Bringing fresh, delicious baked goods to the Makerere community since 2015.</p>
+                <div class="contact">
+                    <p><i class="fas fa-phone"></i> +256 700 123456</p>
+                    <p><i class="fas fa-envelope"></i> info@muksweetloaf.com</p>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section hours">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>Monday - Friday: 7:00 AM - 8:00 PM</li>
+                    <li>Saturday: 8:00 AM - 6:00 PM</li>
+                    <li>Sunday: 9:00 AM - 4:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit" class="btn-small">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Muk Sweet Loaf | All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
