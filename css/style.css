@@ -807,6 +807,12 @@ footer {
     object-fit: cover;
 }
 
+.member-image-u {
+    height: 300px;
+    overflow: hidden;
+}
+
+
 .member-info {
     padding: 1.5rem;
 }
