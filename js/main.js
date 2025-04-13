@@ -199,173 +199,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Quantity Selector
-  const minusBtn = document.querySelector(".minus");
-  const plusBtn = document.querySelector(".plus");
-  const quantityInput = document.querySelector("#quantity");
-
-  if (minusBtn && plusBtn && quantityInput) {
-    minusBtn.addEventListener("click", () => {
-      let value = parseInt(quantityInput.value);
-      if (value > 1) {
-        value--;
-        quantityInput.value = value;
-      }
-    });
-
-    plusBtn.addEventListener("click", () => {
-      let value = parseInt(quantityInput.value);
-      if (value < parseInt(quantityInput.max)) {
-        value++;
-        quantityInput.value = value;
-      }
-    });
-
-    quantityInput.addEventListener("change", () => {
-      let value = parseInt(quantityInput.value);
-      if (value < 1) {
-        quantityInput.value = 1;
-      } else if (value > parseInt(quantityInput.max)) {
-        quantityInput.value = quantityInput.max;
-      }
-    });
-  }
-
-  // FAQ Accordion
-  const accordionButtons = document.querySelectorAll(".accordion-button");
-
-  if (accordionButtons.length > 0) {
-    accordionButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const content = button.nextElementSibling;
-
-        // Toggle active class on button
-        button.classList.toggle("active");
-
-        // Toggle content visibility
-        if (button.classList.contains("active")) {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } else {
-          content.style.maxHeight = 0;
-        }
-
-        // Close other accordion items
-        accordionButtons.forEach((otherButton) => {
-          if (otherButton !== button) {
-            otherButton.classList.remove("active");
-            otherButton.nextElementSibling.style.maxHeight = 0;
-          }
-        });
-      });
-    });
-  }
-
-  // Contact Form Validation
-  const contactForm = document.querySelector("#contactForm");
-
-  if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      // Basic validation
-      let valid = true;
-      const name = document.querySelector("#name");
-      const email = document.querySelector("#email");
-      const message = document.querySelector("#message");
-
-      if (!name.value.trim()) {
-        valid = false;
-        showError(name, "Name is required");
-      } else {
-        removeError(name);
-      }
-
-      if (!email.value.trim()) {
-        valid = false;
-        showError(email, "Email is required");
-      } else if (!isValidEmail(email.value)) {
-        valid = false;
-        showError(email, "Please enter a valid email");
-      } else {
-        removeError(email);
-      }
-
-      if (!message.value.trim()) {
-        valid = false;
-        showError(message, "Message is required");
-      } else {
-        removeError(message);
-      }
-
-      if (valid) {
-        // Simulate form submission
-        alert("Thank you for your message! We will get back to you soon.");
-        contactForm.reset();
-      }
-    });
-  }
-
-  function showError(input, message) {
-    const formGroup = input.parentElement;
-    const errorElement =
-      formGroup.querySelector(".error-message") ||
-      document.createElement("div");
-
-    if (!formGroup.querySelector(".error-message")) {
-      errorElement.className = "error-message";
-      errorElement.style.color = "var(--danger-color)";
-      errorElement.style.fontSize = "0.9rem";
-      errorElement.style.marginTop = "5px";
-      formGroup.appendChild(errorElement);
-    }
-
-    errorElement.textContent = message;
-    input.style.borderColor = "var(--danger-color)";
-  }
-
-  function removeError(input) {
-    const formGroup = input.parentElement;
-    const errorElement = formGroup.querySelector(".error-message");
-
-    if (errorElement) {
-      formGroup.removeChild(errorElement);
-    }
-
-    input.style.borderColor = "#ddd";
-  }
-
-  function isValidEmail(email) {
-    const re =
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-  }
-
-  // Add to Cart Functionality
-  const addToCartButtons = document.querySelectorAll(".add-to-cart");
-
-  if (addToCartButtons.length > 0) {
-    addToCartButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const productCard =
-          button.closest(".product-card") || button.closest(".modal-info");
-        const productName = productCard.querySelector("h3")
-          ? productCard.querySelector("h3").textContent
-          : "Product";
-        const quantity = document.querySelector("#quantity")
-          ? document.querySelector("#quantity").value
-          : 1;
-
-        // Show confirmation message
-        alert(`Added ${quantity} ${productName} to cart!`);
-
-        // Here you would typically update a cart object and persist it
-        // For this demo, we're just showing an alert
-      });
-    });
-  }
-});
 
 
+
+
+
+
+
+  
 // Product data - this would typically come from a database
 const products = {
   1: {
@@ -602,3 +443,175 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 });
+
+
+
+
+
+
+  // Quantity Selector
+  const minusBtn = document.querySelector(".minus");
+  const plusBtn = document.querySelector(".plus");
+  const quantityInput = document.querySelector("#quantity");
+
+  if (minusBtn && plusBtn && quantityInput) {
+    minusBtn.addEventListener("click", () => {
+      let value = parseInt(quantityInput.value);
+      if (value > 1) {
+        value--;
+        quantityInput.value = value;
+      }
+    });
+
+    plusBtn.addEventListener("click", () => {
+      let value = parseInt(quantityInput.value);
+      if (value < parseInt(quantityInput.max)) {
+        value++;
+        quantityInput.value = value;
+      }
+    });
+
+    quantityInput.addEventListener("change", () => {
+      let value = parseInt(quantityInput.value);
+      if (value < 1) {
+        quantityInput.value = 1;
+      } else if (value > parseInt(quantityInput.max)) {
+        quantityInput.value = quantityInput.max;
+      }
+    });
+  }
+
+  // FAQ Accordion
+  const accordionButtons = document.querySelectorAll(".accordion-button");
+
+  if (accordionButtons.length > 0) {
+    accordionButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+
+        // Toggle active class on button
+        button.classList.toggle("active");
+
+        // Toggle content visibility
+        if (button.classList.contains("active")) {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } else {
+          content.style.maxHeight = 0;
+        }
+
+        // Close other accordion items
+        accordionButtons.forEach((otherButton) => {
+          if (otherButton !== button) {
+            otherButton.classList.remove("active");
+            otherButton.nextElementSibling.style.maxHeight = 0;
+          }
+        });
+      });
+    });
+  }
+
+  // Contact Form Validation
+  const contactForm = document.querySelector("#contactForm");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      // Basic validation
+      let valid = true;
+      const name = document.querySelector("#name");
+      const email = document.querySelector("#email");
+      const message = document.querySelector("#message");
+
+      if (!name.value.trim()) {
+        valid = false;
+        showError(name, "Name is required");
+      } else {
+        removeError(name);
+      }
+
+      if (!email.value.trim()) {
+        valid = false;
+        showError(email, "Email is required");
+      } else if (!isValidEmail(email.value)) {
+        valid = false;
+        showError(email, "Please enter a valid email");
+      } else {
+        removeError(email);
+      }
+
+      if (!message.value.trim()) {
+        valid = false;
+        showError(message, "Message is required");
+      } else {
+        removeError(message);
+      }
+
+      if (valid) {
+        // Simulate form submission
+        alert("Thank you for your message! We will get back to you soon.");
+        contactForm.reset();
+      }
+    });
+  }
+
+  function showError(input, message) {
+    const formGroup = input.parentElement;
+    const errorElement =
+      formGroup.querySelector(".error-message") ||
+      document.createElement("div");
+
+    if (!formGroup.querySelector(".error-message")) {
+      errorElement.className = "error-message";
+      errorElement.style.color = "var(--danger-color)";
+      errorElement.style.fontSize = "0.9rem";
+      errorElement.style.marginTop = "5px";
+      formGroup.appendChild(errorElement);
+    }
+
+    errorElement.textContent = message;
+    input.style.borderColor = "var(--danger-color)";
+  }
+
+  function removeError(input) {
+    const formGroup = input.parentElement;
+    const errorElement = formGroup.querySelector(".error-message");
+
+    if (errorElement) {
+      formGroup.removeChild(errorElement);
+    }
+
+    input.style.borderColor = "#ddd";
+  }
+
+  function isValidEmail(email) {
+    const re =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  // Add to Cart Functionality
+  const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+  if (addToCartButtons.length > 0) {
+    addToCartButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const productCard =
+          button.closest(".product-card") || button.closest(".modal-info");
+        const productName = productCard.querySelector("h3")
+          ? productCard.querySelector("h3").textContent
+          : "Product";
+        const quantity = document.querySelector("#quantity")
+          ? document.querySelector("#quantity").value
+          : 1;
+
+        // Show confirmation message
+        alert(`Added ${quantity} ${productName} to cart!`);
+
+        // Here you would typically update a cart object and persist it
+        // For this demo, we're just showing an alert
+      });
+    });
+  }
+});
+
