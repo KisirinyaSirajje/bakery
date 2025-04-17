@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Things- Delicious Bakery in Makerere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+          <nav class="navbar">
+            <a href="index.html" class="logo">Sweet Things</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide current">
+                    <div class="content">
+                        <h2>Welcome to Sweet Things</h2>
+                        <p>Freshly baked goodness in the heart of Makerere</p>
+                        <a href="products.html" class="btn">Explore Our Products</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <h2>Artisan Breads & Pastries</h2>
+                        <p>Handcrafted with love and the finest ingredients</p>
+                        <a href="products.html" class="btn">See Our Selection</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <h2>Special Occasion Cakes</h2>
+                        <p>Make your celebrations memorable with our custom cakes</p>
+                        <a href="contact.html" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fas fa-arrow-left"></i></button>
+                <button id="next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <div class="container">
+            <h2 class="section-title">Welcome to Sweet Things</h2>
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <p>
+                        At Sweet Things, we believe that good bread is the foundation of
+                        a good meal. Located in the vibrant community of Makerere, our
+                        bakery combines traditional baking methods with innovative recipes
+                        to create bread and pastries that delight the senses.
+                    </p>
+                    <p>
+                        Every day, our skilled bakers wake up at dawn to prepare fresh,
+                        aromatic bread that has become a staple in many Ugandan homes. We
+                        use only the finest ingredients, sourced locally whenever
+                        possible, to ensure that every bite is as nutritious as it is
+                        delicious.
+                    </p>
+                    <a href="about.html" class="btn">Learn More About Us</a>
+                </div>
+                <div class="welcome-image">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+                        alt="Fresh bread" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Our Popular Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Sourdough Bread" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Sourdough Bread</h3>
+                        <p>
+                            Our signature sourdough with a perfect crust and soft interior.
+                        </p>
+                        <span class="price">UGX 8,000</span>
+                        <a href="products.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Chocolate Croissants" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Croissants</h3>
+                        <p>Buttery, flaky croissants filled with rich chocolate.</p>
+                        <span class="price">UGX 5,500</span>
+                        <a href="products.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1689&q=80"
+                            alt="Birthday Cake" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Birthday Cake</h3>
+                        <p>Custom-made celebration cakes for your special occasions.</p>
+                        <span class="price">From UGX 45,000</span>
+                        <a href="products.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            alt="Cinnamon Rolls" />
+                    </div>
+                    <div class="product-info">
+                        <h3>Cinnamon Rolls</h3>
+                        <p>Soft, sweet rolls with cinnamon and cream cheese frosting.</p>
+                        <span class="price">UGX 6,000</span>
+                        <a href="products.html" class="btn-small">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="products.html" class="btn">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>
+                            "The bread from Sweet Things has become a staple in our home.
+                            The quality and taste are unmatched in Kampala!"
+                        </p>
+                        <div class="testimonial-author">
+                            <h4>Sarah Namukwaya</h4>
+                            <p>Makerere University Lecturer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>
+                            "I ordered a birthday cake for my daughter and it was not only
+                            beautiful but delicious! Everyone at the party was impressed."
+                        </p>
+                        <div class="testimonial-author">
+                            <h4>David Mukasa</h4>
+                            <p>Local Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>
+                            "As a student at Makerere, I stop by almost every morning for
+                            their pastries. Affordable and so good!"
+                        </p>
+                        <div class="testimonial-author">
+                            <h4>Patricia Akello</h4>
+                            <p>University Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Sweet Things</h3>
+                    <p>
+                        Bringing fresh, delicious baked goods to the Makerere community
+                        since 2015.
+                    </p>
+                    <div class="contact">
+                        <p><i class="fas fa-phone"></i> +256 700 123456</p>
+                        <p><i class="fas fa-envelope"></i> info@muksweetloaf.com</p>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section hours">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 7:00 AM - 8:00 PM</li>
+                        <li>Saturday: 8:00 AM - 6:00 PM</li>
+                        <li>Sunday: 9:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" />
+                        <button type="submit" class="btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sweet Things | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
