@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Things- Delicious Bakery in Makerere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        .icon {
+            font-size: 80px;
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        
+        p {
+            color: #6c757d;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            background-color: #25d366; /* WhatsApp green */
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+        
+        .contact-btn:hover {
+            background-color: #128c7e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        .contact-btn i {
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            .icon {
+                font-size: 60px;
+            }
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <nav class="navbar">
+            <a href="index.html" class="logo">Sweet Things</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="icon">
+            <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <h1>Site Temporarily Down</h1>
+        <p>
+            We regret to inform you that this Sweet Things website is currently unavailable due to a breach of agreement with the Developer. 
+            
+        </p>
+        <p>
+            For more information or to discuss restoring access to the site, please contact the developer directly.
+        </p>
+        <a href="#" class="contact-btn" id="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Contact Developer on WhatsApp
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const whatsappBtn = document.getElementById('whatsapp-btn');
+            
+            whatsappBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Format phone number (add country code for Kenya +254)
+                let phoneNumber = '0706568069';
+                
+                // If phone starts with 0, replace with country code
+                if (phoneNumber.startsWith('0')) {
+                    phoneNumber = '256' + phoneNumber.substring(1);
+                }
+                
+                // Create message
+                const message = encodeURIComponent('Hello, I am contacting you regarding the website that is temporarily down.');
+                
+                // Create WhatsApp URL
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+                
+                // Open WhatsApp in a new tab
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
